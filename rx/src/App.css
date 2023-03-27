@@ -1,0 +1,74 @@
+.background{
+  background-image: linear-gradient(rgb(144, 242, 247), rgb(231, 237, 238));
+
+}
+
+   .footer{
+    display:column;
+    position:fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    justify-content: space-between;
+    background-color: rgb(222, 220, 220);
+    margin-top: 3%;
+
+  }
+  /* carousel section*/
+
+  .carousel {
+    color:black;
+    max-width:100%;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: contain;
+
+  }
+  .caption1 {
+    color: black;
+      font-weight: bold;
+      text-shadow: 2px 1px rgb(6, 6, 6);
+      z-index: 5;
+  }
+ 
+  /* About*/
+  .aboutcontainer{
+    margin-left: 20%;
+    margin-right: 20%;
+    height: 100vh;
+  }
+  .pacoprofile{
+    display:column;
+    justify-content: space-between;
+    text-align: center;
+    color:rgb(8, 8, 8);
+    text-shadow: 2px 1px #a0a3a8;
+  }
+  .pacoimg{
+    height:200px;
+    width:auto;
+    object-fit:contain;
+    border-radius: 50%;
+    border: 5px solid #84a7ee;
+  }
+  .aboutfont{
+    font-family: 'Kaisei Tokumin', serif;
+    font-size: 15px;
+  }
+
+  /* Form */
+  .form{    
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: contain;
+  }
+
+  /* Resources*/
+  .resourcesQuote{
+    font-size: 50px;
+    text-shadow:1px 1px rgb(144, 242, 247);
+    text-align: center;
+    margin-top: 10%;
+    font-family: 'Dancing Script', cursive;
+  }
