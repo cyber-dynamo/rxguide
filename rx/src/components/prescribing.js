@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import Axios from "axios";
-import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
 const Prescribing = () => {
@@ -14,10 +13,10 @@ const Prescribing = () => {
 },[]);
 
     return (
-    <div>
+    <div className='card'>
     {drugList.map((val)=>{
       return(
-        <Card style={{ width: '18rem' }} key={val.div}>
+        <Card style={{ width: '18rem' }} key={val.id} >
       <Card.Body>
         <Card.Title>{val.Category}</Card.Title>
         <Card.Subtitle className="mb-2 text-muted">{val.Drug}</Card.Subtitle>
@@ -25,9 +24,10 @@ const Prescribing = () => {
           {val.Dose}
         </Card.Text>
         <Card.Text>{val.DIN}</Card.Text>
-        <Card.Link href="#">Another Link</Card.Link>
+        <Card.Link href="#">Alternatives</Card.Link>
       </Card.Body>
     </Card>
+   
       )
     })
     }
@@ -37,6 +37,4 @@ const Prescribing = () => {
   
   export default Prescribing;
 
-  const prescribeingLoader = async ()=>{
-    
-  }
+  

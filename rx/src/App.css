@@ -72,3 +72,9 @@
     margin-top: 10%;
     font-family: 'Dancing Script', cursive;
   }
+
+  /* prescribing card */
+
+  .card{
+   background-color: blue;
+  }
