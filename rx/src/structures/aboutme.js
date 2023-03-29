@@ -10,10 +10,10 @@ const Aboutme = () => {
       <br/>
       <p>
         Yet, his childhood dream to become a software developer keeps him
-        advancing even more. Off duty, Paco enjoys to research on interesting computer
+        advancing above and beyond. Off duty, Paco enjoys researching on interesting computer
         science knowledge such as basic computer algorithms, databases,front end frameworks such 
         as react, redux state managing toolkits. It is not unusual to see him challenging 
-        leetcode questions and building softwares. 
+        leetcode questions and building webpages. 
       </p>
       <br/>
       <p>

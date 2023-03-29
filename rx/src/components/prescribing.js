@@ -1,9 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import Axios from "axios";
+import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 const Prescribing = () => {
 
+/* initial list */
   const [drugList,setDrugList]= useState([])
   
   useEffect(() => {
@@ -12,8 +17,17 @@ const Prescribing = () => {
   })
 },[]);
 
+/* new list */
+
+const updateList = ((Condition)=>{
+  Axios.get(`http://localhost:3001/api/get${Condition}`).then(
+    (res)=>{setDrugList(res.data);} )
+})
     return (
-    <div className='card'>
+    <Container>
+      <Row>
+      <Col></Col>
+      <Col >
     {drugList.map((val)=>{
       return(
         <Card style={{ width: '18rem' }} key={val.id} >
@@ -24,14 +38,17 @@ const Prescribing = () => {
           {val.Dose}
         </Card.Text>
         <Card.Text>{val.DIN}</Card.Text>
-        <Card.Link href="#">Alternatives</Card.Link>
+        <Button variant="primary" onClick={()=> {updateList(val.Condition)}}>Alternatives</Button>
       </Card.Body>
     </Card>
    
       )
     })
     }
-   </div>
+    </Col>
+    <Col></Col>
+    </Row>
+   </Container>
     )  
 };
   

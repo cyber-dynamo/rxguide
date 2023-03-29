@@ -21,7 +21,7 @@ export default function Router() {
           <Route path="medications" element={<Medications />} />
           <Route path="COVID" element={<COVID />} />
           </Route>
-
+          
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
