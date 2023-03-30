@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -14,14 +15,27 @@ function Footer() {
   return (
     <Container fluid className='footer'>
       
-      <Row>
-        <Col><Button variant="light"><FaFacebookSquare /></Button>{''}</Col>
-        <Col><Button variant="light"><BsInstagram/></Button>{' '}</Col>
-        <Col><Button variant="light"><BsLinkedin/></Button>{' '}</Col>
+      <Row >
+        <Col className='columnContent'>
+        <Button onClick={() => window.open("https://www.facebook.com/paco.v.chan/", '_blank')}>
+          <FaFacebookSquare/>
+          </Button>
+          </Col>
+
+        <Col className='columnContent'>
+        <Button className='iglogo' onClick={() => window.open("https://www.instagram.com/tupaco.2paco/", '_blank')}>
+          <BsInstagram/>
+          </Button>
+          </Col>
+        <Col className='columnContent'>
+        <Button className='linkedin' onClick={() => window.open("https://www.linkedin.com/in/paco-chan-07972810b/", '_blank')}>
+          <BsLinkedin/>
+          </Button>
+          </Col>
       </Row>
       <Row>
       <Col></Col>
-        <Col lg={5}>© 2023-2023 Paco Chan All rights reserved</Col>
+        <Col lg={5} className='columnContent'>© 2023-2023 Paco Chan All rights reserved</Col>
         <Col></Col>
       </Row>
     
