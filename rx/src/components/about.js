@@ -10,7 +10,7 @@ const About = () => {
       <Container >
       <Row>
         <Col sm={4} className="pacoprofile">
-          <img src="paco.jpg" alt="pacoai" className="pacoimg" />
+          <img src="paco.jpg" alt="paco" className="pacoimg" />
           <h5>Paco Parc Ho Chan</h5>
           <p>BSC Pharmacy</p>
         </Col>
