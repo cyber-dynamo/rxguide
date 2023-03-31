@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from "react-router-dom";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -13,7 +12,7 @@ import '../App.css';
 
 function Footer() {
   return (
-    <Container fluid className='footer'>
+    <Container >
       
       <Row >
         <Col className='columnContent'>
@@ -35,7 +34,7 @@ function Footer() {
       </Row>
       <Row>
       <Col></Col>
-        <Col lg={5} className='columnContent'>© 2023-2023 Paco Chan All rights reserved</Col>
+        <Col lg={5} className='columnContent'>© 2018-2023 Paco Chan All rights reserved</Col>
         <Col></Col>
       </Row>
     

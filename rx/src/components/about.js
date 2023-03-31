@@ -7,14 +7,17 @@ import Aboutme from '../structures/aboutme';
 const About = () => {
     return (
       <div className='background'>
-      <Container className="aboutcontainer">
+      <Container >
       <Row>
         <Col sm={4} className="pacoprofile">
-          <img src="pacoai.png" alt="pacoai" className="pacoimg" />
+          <img src="paco.jpg" alt="pacoai" className="pacoimg" />
           <h5>Paco Parc Ho Chan</h5>
           <p>BSC Pharmacy</p>
         </Col>
         <Col sm={8}><Aboutme/></Col>
+      </Row>
+      <Row>
+        <col></col>
       </Row>
       
     </Container>

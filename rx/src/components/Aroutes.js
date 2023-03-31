@@ -8,6 +8,7 @@ import NoPage from "./nopage";
 import Prescribing from "./prescribing";
 import Medications from './medications';
 import COVID from './COVID';
+import Adaptation from './adaptation';
 
 export default function Router() {
   return (
@@ -20,6 +21,8 @@ export default function Router() {
           <Route path="prescribing" element={<Prescribing />} />
           <Route path="medications" element={<Medications />} />
           <Route path="COVID" element={<COVID />} />
+          <Route path="adaptation" element={<Adaptation />} />
+
           </Route>
           
           <Route path="*" element={<NoPage />} />

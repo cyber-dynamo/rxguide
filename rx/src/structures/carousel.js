@@ -9,7 +9,7 @@ export default function ControlledCarousel() {
   };
 
   return (
-    <div className="caroudiv">
+    <div className="carousel">
     <Carousel activeIndex={index} onSelect={handleSelect}>
       <Carousel.Item>
         <img
@@ -42,8 +42,8 @@ export default function ControlledCarousel() {
         />
 
         <Carousel.Caption className="caption1">
-          <h3>Medications</h3>
-          <p>Side effects</p>
+          <h3>COVID </h3>
+          <p>2023 guide</p>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>

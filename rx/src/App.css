@@ -3,15 +3,11 @@
 
 }
 
-  /* carousel */
-
+  /* home */
   .carousel {
     color:black;
-    max-width:100%;
     margin-left: auto;
     margin-right: auto;
-    object-fit: contain;
-
   }
   .caption1 {
     color: black;
@@ -19,13 +15,22 @@
       text-shadow: 2px 1px rgb(6, 6, 6);
       z-index: 5;
   }
- 
-  /* About*/
-  .aboutcontainer{
-    margin-left: 20%;
-    margin-right: 20%;
-    height: 100vh;
+  .homeintro{
+    margin-top: 10vh;
+    margin-left:2vh;
   }
+  /* Outlet */
+
+  .outlet{
+    height:100%;
+  }
+ 
+  /* Home */
+  .home{
+    background-image: linear-gradient(rgb(144, 242, 247), rgb(231, 237, 238));
+    height: 78vh;
+  }
+  /* About*/
   .pacoprofile{
     display:column;
     justify-content: space-between;
@@ -39,10 +44,12 @@
     object-fit:contain;
     border-radius: 50%;
     border: 5px solid #84a7ee;
+    margin-top: 5%;
   }
   .aboutfont{
     font-family: 'Kaisei Tokumin', serif;
     font-size: 15px;
+    margin-top: 5%;
   }
 
   /* Form */
@@ -55,15 +62,16 @@
 
   /* Resources*/
   .resourcesQuote{
-    font-size: 50px;
+    height:100vh;
+    max-width: 70%;
+    font-size: 40px;
     text-shadow:1px 1px rgb(144, 242, 247);
     text-align: center;
     margin-top: 10%;
+    margin-left: 15%;
+    margin-bottom: 3%;
     font-family: 'Dancing Script', cursive;
   }
-
-  /* Prescribing card  */
- 
 
   /* footer */
 

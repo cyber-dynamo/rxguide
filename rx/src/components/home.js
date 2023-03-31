@@ -7,17 +7,15 @@ import HomeIntro from '../structures/homeintro';
 
 const Home = () => {
     return (
-      <div className="background">
+      <div className="home">
         <Container>
       <Row>
-        <Col>
+        <Col md={5}>
         <HomeIntro/>
         </Col>
-        <Col xs={8}><ControlledCarousel /></Col>
+        <Col><ControlledCarousel/></Col>
       </Row>
-
     </Container>
-    
     </div>
     )
   };

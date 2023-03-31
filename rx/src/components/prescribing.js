@@ -3,8 +3,6 @@ import Axios from "axios";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 
 const Prescribing = () => {
 
@@ -24,13 +22,13 @@ const updateList = ((Condition)=>{
     (res)=>{setDrugList(res.data);} )
 })
     return (
-    <Container>
-      <Row>
-      <Col></Col>
-      <Col >
+   
+      <Container>
+         <div class='row'>
     {drugList.map((val)=>{
       return(
-        <Card style={{ width: '18rem' }} key={val.id} >
+        <div class='col-md-4'>
+        <Card style={{ width: '20rem' }} key={val.id} >
       <Card.Body>
         <Card.Title>{val.Category}</Card.Title>
         <Card.Subtitle className="mb-2 text-muted">{val.Drug}</Card.Subtitle>
@@ -41,14 +39,14 @@ const updateList = ((Condition)=>{
         <Button variant="primary" onClick={()=> {updateList(val.Condition)}}>Alternatives</Button>
       </Card.Body>
     </Card>
-   
-      )
-    })
-    }
-    </Col>
-    <Col></Col>
-    </Row>
-   </Container>
+    </div>
+      )})}
+      <Button variant="danger" onClick={() => window.open("https://www2.gov.bc.ca/gov/content/health/health-drug-coverage/pharmacare-for-bc-residents/what-we-cover/prescription-contraceptives", '_blank')}>
+            Birth Control
+        </Button>
+    </div>
+    </Container>
+     
     )  
 };
   

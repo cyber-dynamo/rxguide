@@ -5,17 +5,17 @@ import Col from 'react-bootstrap/Col';
 
 const COVID = () => {
     return(
-      <Container>
+      <Container className= 'mt-4'>
       <Row>   
         <Col></Col>
         <Col lg={7}>
         <h4>2023 Booster</h4>
-        <p>- Regardless of the number of booster doses given already!!!</p>
-        <p>- Over 80yo</p>
-        <p>- 50yo with underlying conditions such as asthma, COPD, blood disorders
+        <p>* Regardless of the number of booster doses given already!!!</p>
+        <p>* Over 80yo</p>
+        <p>* 18yo with underlying conditions such as asthma, COPD, blood disorders
           diabetes, cancer, etc. 
         </p>
-        <p>- Should be at least 5-6 months from previous dose</p>
+        <p>* Should be at least 5-6 months from previous dose</p>
         </Col>
         <Col></Col>
       </Row>

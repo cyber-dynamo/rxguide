@@ -18,12 +18,10 @@ const Medications = () => {
 
     return (
     <Container>
-      <Row>
-      <Col></Col>
-      <Col >
+       <div class='row'>
     {medList.map((val)=>{
       return(
-        <div>
+        <div class='col-md-4'>
       <Accordion key ={val.id}>
       <Accordion.Item eventKey="0">
         <Accordion.Header>{val.drug}</Accordion.Header>
@@ -38,9 +36,7 @@ const Medications = () => {
       )
     })
     }
-    </Col>
-    <Col></Col>
-    </Row>
+    </div>
    </Container>
     )  
 };

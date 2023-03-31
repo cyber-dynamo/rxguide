@@ -15,6 +15,9 @@ const Resources = () => {
       <Nav.Item>
         <Nav.Link eventKey as ={Link} to="COVID">COVID</Nav.Link>
       </Nav.Item>
+      <Nav.Item>
+        <Nav.Link eventKey as ={Link} to="adaptation">Adaptation</Nav.Link>
+      </Nav.Item>
     </Nav>
     <Outlet/>
     <p className='resourcesQuote'>Medicines cure diseases but only pharmacists can cure patients</p>

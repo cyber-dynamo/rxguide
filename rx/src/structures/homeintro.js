@@ -2,13 +2,22 @@ import React from 'react';
 
 const HomeIntro = () => {
     return (
-        <div>
+        <div className='homeintro'>
         <h4>Minor ailments</h4>
         <p>
-        Minor ailments are conditions that can be managed with minimal treatment or self-care. 
-        They are short-term condition without lab results requirements.
-        Treatment does not mask underlying conditions and 
-        minimal follow-up is required.
+        Minor ailments are conditions that:
+        </p> 
+        <p>
+           * Can be managed with minimal intervention
+        </p>
+        <p>
+        * Are short-term conditions without lab work
+        </p>
+        <p>
+        * Does not mask underlying conditions
+        </p>
+        <p>
+        * Minimal follow-up required.
         </p>
         </div>
         );
